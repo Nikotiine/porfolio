@@ -1,0 +1,32 @@
+@import "./theme.scss";
+@import "../../node_modules/bulma/bulma.sass";
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
+
+nav {
+  padding: 0.5rem;
+  a {
+    font-weight: bold;
+
+    &.router-link-exact-active {
+      color: black;
+    }
+  }
+}
+.message-header {
+  justify-content: center;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.6rem;
+}
+.has-font-ubuntu {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2rem;
+}
+.font-ubuntu {
+  font-family: "Ubuntu", sans-serif;
+}

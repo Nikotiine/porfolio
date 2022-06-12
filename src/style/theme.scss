@@ -1,0 +1,10 @@
+$primary: rgba(107, 166, 241, 1);
+$navbar-background-color: rgb(6 150 198);
+$info: rgb(6 150 198);
+$navbar-item-color: white;
+$navbar-item-hover-background-color: transparent;
+$navbar-dropdown-background-color: rgb(6 150 198);
+$footer-padding: 1rem 1.5rem 1rem;
+
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+@import "../../node_modules/bulma/sass/utilities/_all.sass";
