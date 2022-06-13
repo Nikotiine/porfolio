@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <canvas id="myChart" width="320" height="320"></canvas>
+  <div class="chart">
+    <canvas id="myChart" width="480" height="420"></canvas>
   </div>
 </template>
 
@@ -106,4 +106,10 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+canvas {
+  // max-width: 600px;
+  margin: 0 auto;
+  //width: auto;
+}
+</style>

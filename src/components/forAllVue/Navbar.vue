@@ -21,12 +21,18 @@
 
     <div class="navbar-menu" :class="{ 'is-active': openBurger }">
       <div class="navbar-start">
-        <router-link to="/" class="navbar-item" @click="openCloseNavbar"
+        <router-link
+          to="/"
+          class="navbar-item"
+          @click="scrollUp() + openCloseNavbar()"
           >Nicolas Godin</router-link
         >
 
-        <router-link to="/mon-cv" class="navbar-item" @click="openCloseNavbar"
-          >Mon CV</router-link
+        <router-link
+          to="/cv-et-projet"
+          class="navbar-item"
+          @click="openCloseNavbar() + scrollInCV()"
+          >mon CV</router-link
         >
 
         <div class="navbar-item has-dropdown is-hoverable">
@@ -80,6 +86,14 @@ export default {
   methods: {
     openCloseNavbar() {
       this.openBurger = !this.openBurger;
+    },
+    scrollUp() {
+      window.scrollTo(0, 0);
+    },
+    scrollInCV() {
+      setTimeout(() => {
+        document.getElementById("title").scrollIntoView({ behavior: "smooth" });
+      }, 500);
     },
   },
 };

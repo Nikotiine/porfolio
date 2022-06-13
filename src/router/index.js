@@ -14,15 +14,17 @@ const routes = [
         path: "/",
         name: "accueil",
         component: AccueilView,
-      },
-      {
-        path: "/mon-cv",
-        name: "monCV",
-        component: MonCV,
+        children: [
+          {
+            path: "/cv-et-projet",
+            // name: "monCV",
+            components: { default: MonCV, a: MesProjets },
+          },
+        ],
       },
       {
         path: "/mes-projets",
-        name: "mesProjets",
+        name: "projets",
         component: MesProjets,
       },
     ],

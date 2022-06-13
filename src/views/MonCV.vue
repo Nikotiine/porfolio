@@ -3,7 +3,7 @@
     <div class="mon-cv">
       <div class="left-part mt-5">
         <div class="me">
-          <h1 class="title">Godin Nicolas</h1>
+          <h1 class="title" id="title">Godin Nicolas</h1>
           <p class="subtitle font-ubuntu">Developpeur Web <br />Full-stack</p>
         </div>
         <div class="contact mt-4">
@@ -65,6 +65,7 @@ export default {
     ExperiancesPro,
     chartOfCompetences,
   },
+  mounted() {},
 };
 </script>
 
@@ -81,6 +82,7 @@ export default {
 .competence h3 {
   margin: 1rem auto 0;
 }
+
 .left-part {
   display: flex;
   flex-direction: column;

@@ -2,7 +2,9 @@
   <nav>
     <nav-bar />
   </nav>
-  <div class="public"><router-view /></div>
+  <div class="public">
+    <router-view />
+  </div>
   <footer>
     <Footer />
   </footer>
