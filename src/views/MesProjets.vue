@@ -1,6 +1,5 @@
 <template>
-  <section class="hero is-fullheight">
-    <p class="title">Mes projets</p>
+  <section class="" id="projects">
     <div class="mes-projets">
       <div class="card" v-for="projet in projets" :key="projet.id">
         <div class="card-content">
@@ -87,8 +86,8 @@ export default {
 <style lang="scss" scoped>
 .mes-projets {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  //grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(300px, 23%));
   gap: 2rem;
 }
 .card {

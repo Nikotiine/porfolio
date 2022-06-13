@@ -29,7 +29,7 @@
         >
 
         <router-link
-          to="/cv-et-projet"
+          to="/mon-cv"
           class="navbar-item"
           @click="openCloseNavbar() + scrollInCV()"
           >mon CV</router-link
@@ -39,7 +39,7 @@
           <router-link
             to="/mes-projets"
             class="navbar-link"
-            @click="openCloseNavbar"
+            @click="openCloseNavbar() + scrollInProject()"
             >Mes projets</router-link
           >
 
@@ -92,7 +92,14 @@ export default {
     },
     scrollInCV() {
       setTimeout(() => {
-        document.getElementById("title").scrollIntoView({ behavior: "smooth" });
+        document.getElementById("cv").scrollIntoView({ behavior: "smooth" });
+      }, 500);
+    },
+    scrollInProject() {
+      setTimeout(() => {
+        document
+          .getElementById("projects")
+          .scrollIntoView({ behavior: "smooth" });
       }, 500);
     },
   },

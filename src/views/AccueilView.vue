@@ -9,32 +9,37 @@
         <about-me />
       </div>
       <div
-        :class="{ showFromRight: onScroll150, accueil: !onScroll150 }"
+        :class="{ showFromRight: showMyKnowledge, accueil: !showMyKnowledge }"
         class="mt-6"
       >
         <MyKnowledge />
       </div>
-      <div :class="{ showFromLeft: onscrool450, accueil: !onscrool450 }">
+      <div
+        :class="{
+          showFromLeft: showTraningCourse,
+          accueil: !showTraningCourse,
+        }"
+      >
         <training-course />
       </div>
 
-      <div id="cv" :class="{ showMyCV: onScroll600, hidden: !onScroll600 }">
+      <div id="cv" :class="{ 'my-cv': showMyCv, accueil: !showMyCv }">
         <article class="message is-info">
           <div class="message-header">
             <p>Mon cv</p>
           </div>
           <div class="message-body">
-            <router-view></router-view>
+            <MonCV />
           </div>
         </article>
       </div>
-      <div class="">
+      <div :class="{ 'my-projects': showMyProjects, accueil: !showMyProjects }">
         <article class="message is-info">
           <div class="message-header">
-            <p>Mes projet</p>
+            <p>Mes projets</p>
           </div>
           <div class="message-body">
-            <router-view name="a" />
+            <MesProjets />
           </div>
         </article>
       </div>
@@ -46,20 +51,24 @@
 import AboutMe from "@/components/accueil/AboutMe.vue";
 import MyKnowledge from "@/components/accueil/Knowledge.vue";
 import TrainingCourse from "@/components/accueil/TrainingCourse.vue";
-//import MonCV from "@/views/MonCV.vue";
+import MonCV from "@/views/MonCV.vue";
+import MesProjets from "@/views/MesProjets.vue";
 export default {
   name: "MonAccueil",
   components: {
     AboutMe,
     MyKnowledge,
     TrainingCourse,
+    MonCV,
+    MesProjets,
   },
   data() {
     return {
       isMounted: false,
-      onScroll150: false,
-      onscrool450: false,
-      onScroll600: false,
+      showMyKnowledge: false,
+      showTraningCourse: false,
+      showMyCv: false,
+      showMyProjects: false,
     };
   },
 
@@ -67,22 +76,27 @@ export default {
     showCard2: function () {
       const pos = window.scrollY;
       if (pos > 150) {
-        this.onScroll150 = true;
+        this.showMyKnowledge = true;
       }
 
       if (pos > 450) {
-        this.onscrool450 = true;
+        this.showTraningCourse = true;
       }
-      if (pos > 600) {
-        this.onScroll600 = true;
+      if (pos > 700) {
+        this.showMyCv = true;
         this.$router.push({
-          path: "/cv-et-projet",
+          path: "/mon-cv",
+        });
+      } else {
+        this.$router.push({
+          path: "/",
         });
       }
-      if (pos > 1000) {
-        this.onScroll900 = true;
-      } else {
-        this.onScroll900 = false;
+      if (pos > 2300) {
+        this.showMyProjects = true;
+        this.$router.push({
+          path: "/mes-projets",
+        });
       }
     },
   },
@@ -103,13 +117,15 @@ export default {
   min-height: 150vh;
   display: grid;
   justify-items: center;
-  grid-template-columns: 1fr;
-  grid-template-rows: 0.5fr 1fr 1fr 1fr;
+  //grid-template-columns: 1fr;
+  grid-template-rows: 0.2fr 0.4fr 0.3fr 0.3fr 1fr 0.5fr;
   grid-template-areas:
     "titre "
     "card1"
     "card2"
-    "card3";
+    "card3"
+    "card4"
+    "card5";
 }
 .accueil:nth-child(1) {
   grid-area: titre;
@@ -156,14 +172,27 @@ export default {
   min-width: 95%;
   transition: left ease-in-out 1.3s;
 }
-.hidden {
+.accueil:nth-child(5) {
   opacity: 0;
+  grid-area: card4;
+  width: 95%;
 }
-.showMyCV {
+.accueil:nth-child(6) {
+  opacity: 0;
+  grid-area: card5;
+  width: 95%;
+}
+.my-cv {
   padding: 0.5rem;
   margin: 0.5rem;
   opacity: 1;
   transition: opacity ease-in-out 2s;
   max-width: 95%;
+}
+.my-projects {
+  opacity: 1;
+  grid-area: card5;
+  width: 95%;
+  transition: opacity ease-in-out 2s;
 }
 </style>

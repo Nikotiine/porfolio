@@ -3,7 +3,7 @@
     <div class="mon-cv">
       <div class="left-part mt-5">
         <div class="me">
-          <h1 class="title" id="title">Godin Nicolas</h1>
+          <h1 class="title">Godin Nicolas</h1>
           <p class="subtitle font-ubuntu">Developpeur Web <br />Full-stack</p>
         </div>
         <div class="contact mt-4">

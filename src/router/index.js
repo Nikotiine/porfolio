@@ -16,16 +16,16 @@ const routes = [
         component: AccueilView,
         children: [
           {
-            path: "/cv-et-projet",
-            // name: "monCV",
-            components: { default: MonCV, a: MesProjets },
+            path: "/mon-cv",
+            name: "monCV",
+            component: MonCV,
+          },
+          {
+            path: "/mes-projets",
+            name: "projets",
+            component: MesProjets,
           },
         ],
-      },
-      {
-        path: "/mes-projets",
-        name: "projets",
-        component: MesProjets,
       },
     ],
   },
