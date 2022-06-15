@@ -99,6 +99,10 @@ export default {
         this.$router.push({
           path: "/mon-cv",
         });
+      } else {
+        this.$router.push({
+          path: "/",
+        });
       }
       if (pos > 2300) {
         this.showMyProjects = true;
@@ -115,9 +119,10 @@ export default {
     }, 150);
     window.addEventListener("scroll", this.showCard2);
   },
-  // created() {
-  //   window.addEventListener("scroll", this.showCard2);
-  // },
+
+  beforeUnmount() {
+    window.removeEventListener("scroll", this.showCard2);
+  },
 };
 </script>
 

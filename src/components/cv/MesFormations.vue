@@ -6,20 +6,20 @@
           <td class="pr-5">2022</td>
           <td>
             <strong>Formation DWM ENI</strong><br />
-            Foramtion dev web et web mobile (rncp 5)
+            Formation dev web et web mobile (rncp 5)
           </td>
         </tr>
         <tr>
           <td class="pr-5">2021-2022</td>
           <td>
             <strong>Formation DTBI Afpa</strong><br />
-            Formaton aux techniques informatques (HTML/CSS/JS/W.P)
+            Formation aux techniques informatiques (HTML/CSS/JS/W.P)
           </td>
         </tr>
         <tr>
           <td class="pr-5">2018</td>
           <td>
-            <strong>Préparaton DEJEPS - AFRAT</strong><br />
+            <strong>Préparation DEJEPS - AFRAT</strong><br />
             Préparation aux tests Dejeps escalade en milieu naturel
           </td>
         </tr>

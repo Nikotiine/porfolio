@@ -97,7 +97,7 @@
           <label class="checkbox">
             <input type="checkbox" v-model="cgu" />
             Je suis d'accord avec
-            <router-link to="/">
+            <router-link to="/mentions-legales">
               <strong>les CGU</strong>
             </router-link>
           </label>

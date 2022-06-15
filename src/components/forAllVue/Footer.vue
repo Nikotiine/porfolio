@@ -5,7 +5,7 @@
         <strong>@2022 Nicolas Godin</strong> Made with
         <a href="https://vuejs.org/">VueJs 3</a> and
         <a href="https://bulma.io/">Bulma</a> <br />
-        <router-link to="/info/toto">Mentions legales</router-link>
+        <router-link to="/mentions-legales">Mentions legales & CGU</router-link>
       </p>
     </div>
   </footer>

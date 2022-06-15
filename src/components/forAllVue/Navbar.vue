@@ -93,9 +93,11 @@ export default {
       }, 500);
     },
     scrollToContact() {
-      document
-        .getElementById("contact-form")
-        .scrollIntoView({ behavior: "smooth" });
+      setTimeout(() => {
+        document
+          .getElementById("contact-form")
+          .scrollIntoView({ behavior: "smooth" });
+      }, 500);
     },
     scrollInProject() {
       setTimeout(() => {

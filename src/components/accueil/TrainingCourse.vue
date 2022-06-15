@@ -13,7 +13,8 @@
         DTBI octobre 2021 - fervrier 2022 <br />
         Stage en entreprise chez
         <a href="https://graaly.com/" target="_blank">Graaly</a> <br />
-        ENI Mai 2022 - decembre 2022 <br />
+        <a href="https://www.eni-ecole.fr/" target="_blank">ENI</a> Mai 2022 -
+        decembre 2022 <br />
         Stage en entrepise a trouver octobre 2022 - decembre 2022
       </p>
     </div>

@@ -5,21 +5,9 @@ import MonCV from "../views/MonCV.vue";
 import MesProjets from "../views/MesProjets.vue";
 import AccueilView from "../views/AccueilView.vue";
 import FormulaireContact from "../views/FormulaireContact.vue";
-import MentionsEtCgu from "../views/MentionsEtCgu.vue";
-import MentionsLegales from "../components/mention_cgu/MentionsLegales.vue";
+import MentionsLegales from "../views/MentionsLegales.vue";
+//import MentionsLegales from "../components/mention_cgu/MentionsLegales.vue";
 const routes = [
-  {
-    path: "/info/",
-    name: "mentions-legales",
-    component: MentionsEtCgu,
-    children: [
-      {
-        path: "/info/toto",
-        name: "mentions",
-        component: MentionsLegales,
-      },
-    ],
-  },
   {
     path: "/",
     name: "home",
@@ -46,6 +34,11 @@ const routes = [
             component: FormulaireContact,
           },
         ],
+      },
+      {
+        path: "/mentions-legales",
+        name: "mentions-legales",
+        component: MentionsLegales,
       },
     ],
   },

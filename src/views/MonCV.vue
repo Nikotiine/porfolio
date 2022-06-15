@@ -4,7 +4,7 @@
       <div class="left-part mt-5">
         <div class="me">
           <h1 class="title">Godin Nicolas</h1>
-          <p class="subtitle font-ubuntu">Developpeur Web <br />Full-stack</p>
+          <p class="subtitle font-ubuntu">Développeur Web <br />Full-stack</p>
         </div>
         <div class="contact mt-4">
           <h3 class="title is-5">Info Contact</h3>
@@ -24,10 +24,10 @@
           </p>
         </div>
         <div class="interets mt-5">
-          <h3 class="title is-5">Mes centres d'interets</h3>
+          <h3 class="title is-5">Mes centres d'intérêts</h3>
           <p class="subtitle is-6">
-            Escalade / alpinisme <br />
-            Randonnée <br />
+            Escalade et alpinisme <br />
+            Randonnée alpine<br />
             Jeux de societés
           </p>
         </div>
@@ -42,11 +42,11 @@
           <mes-formations />
         </div>
         <div class="competence">
-          <h3 class="title is-3 font-ubuntu">Competences</h3>
+          <h3 class="title is-3 font-ubuntu">Compétences</h3>
           <chart-of-competences />
         </div>
         <div class="experience mt-6">
-          <h3 class="title is-3 font-ubuntu">Experiences pro</h3>
+          <h3 class="title is-3 font-ubuntu">Expériences professionnelles</h3>
           <experiances-pro />
         </div>
       </div>

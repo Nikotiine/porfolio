@@ -48,7 +48,7 @@ export default {
           src: require("@/assets/img/logo_grimpe.png"),
           techno: "VueJs + Bulma + NodeJs(express)",
           sujet:
-            "Application destine aux grimpeurs afin de reference les differents site d'escalade et les voies existante , possiblite de creer un carnet de croix",
+            "Application destinée aux grimpeurs afin de réferencer les differents sites d'escalade et les voies existantes , possiblité de creer un carnet de croix",
         },
         {
           id: 1,
@@ -104,9 +104,6 @@ export default {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 1fr);
     gap: 1rem;
-  }
-  .card {
-    // max-width: 20rem;
   }
 }
 </style>
