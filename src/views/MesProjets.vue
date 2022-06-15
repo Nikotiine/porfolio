@@ -6,10 +6,7 @@
           <div class="media">
             <div class="media-left">
               <figure class="image is-128x128">
-                <img
-                  src="https://bulma.io/images/placeholders/96x96.png"
-                  alt="Placeholder image"
-                />
+                <img :src="projet.src" alt="Placeholder image" />
               </figure>
             </div>
             <div class="media-content">
@@ -24,8 +21,12 @@
           </div>
         </div>
         <footer class="card-footer">
-          <a href="#" class="card-footer-item">Voir sur GitHub</a>
-          <a href="#" class="card-footer-item">Visiter le site</a>
+          <a :href="projet.lienGit" target="_blank" class="card-footer-item"
+            >Voir sur GitHub</a
+          >
+          <a :href="projet.lienWeb" target="_blank" class="card-footer-item"
+            >Visiter le site</a
+          >
         </footer>
       </div>
     </div>
@@ -42,8 +43,9 @@ export default {
           id: 0,
           name: "Referenciel grimpe",
           typeDeProjet: "Side-project",
-          lienGit: "http......",
+          lienGit: "https://github.com/Nikotiine/referencielGrimpe",
           lienWeb: "www.google.com",
+          src: require("@/assets/img/logo_grimpe.png"),
           techno: "VueJs + Bulma + NodeJs(express)",
           sujet:
             "Application destine aux grimpeurs afin de reference les differents site d'escalade et les voies existante , possiblite de creer un carnet de croix",
@@ -52,30 +54,32 @@ export default {
           id: 1,
           name: "Site Web Meta-homeopathie",
           typeDeProjet: "Projet concret",
-          lienGit: "http....dsfsd..",
-          lienWeb: "www.googfdsfle.com",
+          lienGit: "https://github.com/Nikotiine/genesisv2",
+          lienWeb: "https://github.com/Nikotiine/backend-meta",
+          src: require("@/assets/img/logo_genesis.png"),
           techno: "VueJs + Bulma + NodeJs(express)",
           sujet:
-            "Site vitrine pour des formations en Meta-Homeopathie , et interface Admin et users pour le refill des produits ",
+            "Site vitrine pour des formations en Meta-Homeopathie , et interface Admin + users pour le refill des produits ",
         },
         {
           id: 2,
           name: "BackEnd type Cli",
           typeDeProjet: "Side-project",
-          lienGit: "http....dsfsd..",
+          lienGit: "https://github.com/Nikotiine/backendnodeJs",
           lienWeb: "www.googfdsfle.com",
+          src: require("@/assets/img/logo_node.png"),
           techno: "NodeJs + Express + Sequelize + Mariadb",
           sujet:
-            "Packtage pre-compile pour faire un backend nodeJs pre-amorce mariaDb ",
+            "Packtage pre-compilé pour faire un backend nodeJs avec mariaDb | autre ddb sql configurable ",
         },
         {
           id: 3,
           name: "Portfolio",
           typeDeProjet: "Projet concret",
-          lienGit: "http....dsfsd..",
+          lienGit: "https://github.com/Nikotiine/porfolio",
           lienWeb: "www.googfdsfle.com",
           techno: "VueJs + bulma + chartjs",
-          sujet: "Le code sources de ce site :) ",
+          sujet: "Le code source de ce site  ",
         },
       ],
     };
@@ -94,5 +98,15 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+@media screen and (max-width: 600px) {
+  .mes-projets {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 1rem;
+  }
+  .card {
+    // max-width: 20rem;
+  }
 }
 </style>

@@ -44,19 +44,13 @@
           >
 
           <div class="navbar-dropdown">
-            <router-link to="/" class="navbar-item" @click="openCloseNavbar"
-              >Side-Project</router-link
-            >
-            <router-link to="/" class="navbar-item" @click="openCloseNavbar"
-              >Projets concrets</router-link
-            >
             <a
               class="navbar-item"
               target="_blank"
               href="https://github.com/Nikotiine/"
               @click="openCloseNavbar"
             >
-              Dispo sur GitHub
+              Mon profil GitHub
             </a>
           </div>
         </div>
@@ -65,7 +59,10 @@
       <div class="navbar-end">
         <div class="navbar-item">
           <div class="buttons">
-            <router-link to="/" class="button is-rounded"
+            <router-link
+              to="/contact"
+              class="button is-rounded"
+              @click="openCloseNavbar() + scrollToContact()"
               ><strong>Me contacter</strong></router-link
             >
           </div>
@@ -94,6 +91,11 @@ export default {
       setTimeout(() => {
         document.getElementById("cv").scrollIntoView({ behavior: "smooth" });
       }, 500);
+    },
+    scrollToContact() {
+      document
+        .getElementById("contact-form")
+        .scrollIntoView({ behavior: "smooth" });
     },
     scrollInProject() {
       setTimeout(() => {

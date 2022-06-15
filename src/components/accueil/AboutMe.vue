@@ -15,6 +15,7 @@
         je suis en formation DWM avec l'
         <a
           href="https://www.eni-ecole.fr/formations/developpement/bac2-developpeur-web-et-web-mobile/"
+          target="_blank"
           >ENI</a
         ><br />
         J'ai commencé mon apprentissage en octobre 2021 avec une pre-formation

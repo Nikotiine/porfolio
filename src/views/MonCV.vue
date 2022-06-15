@@ -89,4 +89,16 @@ export default {
   justify-content: space-between;
   margin-bottom: 3rem;
 }
+@media screen and (max-width: 600px) {
+  .mon-cv {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 1fr;
+    grid-template-areas:
+      "left-part"
+      "right-part";
+  }
+  .left-part {
+    justify-content: flex-start;
+  }
+}
 </style>

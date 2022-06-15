@@ -112,4 +112,9 @@ canvas {
   margin: 0 auto;
   //width: auto;
 }
+@media screen and (max-width: 600px) {
+  .chart {
+    max-width: 320px;
+  }
+}
 </style>

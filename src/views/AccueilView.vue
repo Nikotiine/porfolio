@@ -43,11 +43,22 @@
           </div>
         </article>
       </div>
+      <div class="contact" id="contact-form">
+        <article class="message is-info">
+          <div class="message-header">
+            <p>Me contacter</p>
+          </div>
+          <div class="message-body">
+            <formulaire-contact />
+          </div>
+        </article>
+      </div>
     </div>
   </section>
 </template>
 
 <script>
+import FormulaireContact from "@/views/FormulaireContact.vue";
 import AboutMe from "@/components/accueil/AboutMe.vue";
 import MyKnowledge from "@/components/accueil/Knowledge.vue";
 import TrainingCourse from "@/components/accueil/TrainingCourse.vue";
@@ -61,6 +72,7 @@ export default {
     TrainingCourse,
     MonCV,
     MesProjets,
+    FormulaireContact,
   },
   data() {
     return {
@@ -87,10 +99,6 @@ export default {
         this.$router.push({
           path: "/mon-cv",
         });
-      } else {
-        this.$router.push({
-          path: "/",
-        });
       }
       if (pos > 2300) {
         this.showMyProjects = true;
@@ -105,10 +113,11 @@ export default {
     setTimeout(() => {
       this.isMounted = !this.isMounted;
     }, 150);
-  },
-  created() {
     window.addEventListener("scroll", this.showCard2);
   },
+  // created() {
+  //   window.addEventListener("scroll", this.showCard2);
+  // },
 };
 </script>
 
@@ -118,14 +127,15 @@ export default {
   display: grid;
   justify-items: center;
   //grid-template-columns: 1fr;
-  grid-template-rows: 0.2fr 0.4fr 0.3fr 0.3fr 1fr 0.5fr;
+  grid-template-rows: 0.2fr 0.4fr 0.3fr 0.3fr 1fr 0.5fr 0.5fr;
   grid-template-areas:
     "titre "
     "card1"
     "card2"
     "card3"
     "card4"
-    "card5";
+    "card5"
+    "card6";
 }
 .accueil:nth-child(1) {
   grid-area: titre;
@@ -182,6 +192,10 @@ export default {
   grid-area: card5;
   width: 95%;
 }
+.contact {
+  grid-area: card6;
+  min-width: 95%;
+}
 .my-cv {
   padding: 0.5rem;
   margin: 0.5rem;
@@ -194,5 +208,10 @@ export default {
   grid-area: card5;
   width: 95%;
   transition: opacity ease-in-out 2s;
+}
+@media screen and (max-width: 480px) {
+  .accueil-body {
+    grid-template-rows: 0.3fr 0.3fr 0.1fr 0.1fr 1fr 0.5fr;
+  }
 }
 </style>
