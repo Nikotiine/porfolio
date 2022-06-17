@@ -8,8 +8,11 @@
         </div>
         <div class="contact mt-4">
           <h3 class="title is-5">Info Contact</h3>
+          <figure class="image is-32x32">
+            <img src="@/assets/img/logo_link.png" />
+          </figure>
 
-          <p class="subtitle is-6">
+          <p class="subtitle is-6 mt-3">
             <a href=" htps://www.linkedin.com/in/nikolasgodin"
               >Profil Linkedin</a
             >
@@ -82,7 +85,11 @@ export default {
 .competence h3 {
   margin: 1rem auto 0;
 }
-
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .left-part {
   display: flex;
   flex-direction: column;

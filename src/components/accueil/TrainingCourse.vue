@@ -15,7 +15,8 @@
         <a href="https://graaly.com/" target="_blank">Graaly</a> <br />
         <a href="https://www.eni-ecole.fr/" target="_blank">ENI</a> Mai 2022 -
         decembre 2022 <br />
-        Stage en entrepise a trouver octobre 2022 - decembre 2022
+        Stage en entrepise a trouver du
+        <strong>17 octobre 2022 au 9 decembre 2022</strong>
       </p>
     </div>
   </article>
