@@ -44,7 +44,8 @@ export default {
           name: "Referenciel grimpe",
           typeDeProjet: "Side-project",
           lienGit: "https://github.com/Nikotiine/referencielGrimpe",
-          lienWeb: "www.google.com",
+          lienWeb:
+            "https://github.com/Nikotiine/referencielGrimpe/blob/main/README.md",
           src: require("@/assets/img/logo_grimpe.png"),
           techno: "VueJs + Bulma + NodeJs(express)",
           sujet:
@@ -66,7 +67,7 @@ export default {
           name: "BackEnd type Cli",
           typeDeProjet: "Side-project",
           lienGit: "https://github.com/Nikotiine/backendnodeJs",
-          lienWeb: "www.googfdsfle.com",
+          lienWeb: "https://github.com/Nikotiine/backendnodeJs",
           src: require("@/assets/img/logo_node.png"),
           techno: "NodeJs + Express + Sequelize + Mariadb",
           sujet:
@@ -78,8 +79,21 @@ export default {
           typeDeProjet: "Projet concret",
           lienGit: "https://github.com/Nikotiine/porfolio",
           lienWeb: "www.googfdsfle.com",
+          src: require("@/assets/img/logo_vue.png"),
           techno: "VueJs + bulma + chartjs",
           sujet: "Le code source de ce site  ",
+        },
+        {
+          id: 4,
+          name: "NodeJs mini-backend",
+          typeDeProjet: "Projet concret",
+          lienGit: "https://github.com/Nikotiine/forContactFrom",
+          lienWeb:
+            "https://github.com/Nikotiine/forContactFrom/blob/main/readme.md",
+          src: require("@/assets/img/logo_node.png"),
+          techno: "NodeJs + express() + nodemailer",
+          sujet:
+            "Mini backend pour site web statique : permet l'envoie de mail pour un fommulaire de contact",
         },
       ],
     };

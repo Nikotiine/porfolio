@@ -16,6 +16,9 @@ import Footer from "@/components/forAllVue/Footer.vue";
 export default {
   name: "PublicLayout",
   components: { NavBar, Footer },
+  mounted() {
+    document.title = "Nicolas Godin";
+  },
 };
 </script>
 

@@ -1,6 +1,6 @@
 <template>
-  <section class="hero is-fullheight bg-accueil">
-    <div class="accueil-body" id="home">
+  <section class="hero is-fullheight bg-accueil" id="home">
+    <div class="accueil-body">
       <div class="accueil">
         <h1 class="title mt-6 has-font-ubuntu">Nicolas Godin</h1>
         <h2 class="subtitle">Developpeur Full-stack</h2>

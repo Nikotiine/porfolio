@@ -24,7 +24,7 @@
         <router-link
           to="/"
           class="navbar-item"
-          @click="scrollUp() + openCloseNavbar()"
+          @click="scrollInHome() + openCloseNavbar()"
           >Nicolas Godin</router-link
         >
 
@@ -84,12 +84,15 @@ export default {
     openCloseNavbar() {
       this.openBurger = !this.openBurger;
     },
-    scrollUp() {
-      window.scrollTo(0, 0);
+
+    scrollInHome() {
+      document.getElementById("home").scrollIntoView({ behavior: "smooth" });
     },
     scrollInCV() {
       setTimeout(() => {
-        document.getElementById("cv").scrollIntoView({ behavior: "smooth" });
+        document
+          .getElementById("cv")
+          .scrollIntoView({ behavior: "smooth", block: "start" });
       }, 500);
     },
     scrollToContact() {
@@ -110,4 +113,18 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+a.navbar-item:hover {
+  color: #000;
+}
+.navbar-link:hover {
+  color: #000;
+}
+a.nvabar-item:visited {
+  color: white;
+}
+
+.navbar-link:not(.is-arrowless)::after {
+  border-color: white;
+}
+</style>

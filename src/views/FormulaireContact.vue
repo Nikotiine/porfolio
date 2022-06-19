@@ -117,13 +117,18 @@
         </div>
       </div>
     </div>
+    <toast-succes :active="succes" :message="succesMessage" />
+    <toast-error :active="erreur" :message="errorMessage" />
   </section>
 </template>
 
 <script>
 import axios from "axios";
+import ToastSucces from "@/components/forAllVue/ToastSucces.vue";
+import ToastError from "@/components/forAllVue/ToastError.vue";
 
 export default {
+  components: { ToastSucces, ToastError },
   name: "FormulaireContact",
 
   data() {
@@ -139,9 +144,8 @@ export default {
       waitForResult: false,
       notValidEmail: false,
       validEmail: false,
-      ToastSuccesMessage: "Formulaire de contact correctement envoyé",
-      ToastErreurMessage:
-        "Formulaire de contact non envoyé , merci de recommencer",
+      succesMessage: "Votre message a été correctement envoyé",
+      errorMessage: "Un probleme est survenu , merci de re-essayer",
     };
   },
   methods: {
@@ -168,15 +172,24 @@ export default {
           message: this.message,
         })
         .then((res) => {
+          this.waitForResult = false;
           if (res.status === 200) {
             this.succes = true;
             setTimeout(() => {
-              this.$router.push({
-                path: "/",
-              });
+              document
+                .getElementById("home")
+                .scrollIntoView({ behavior: "smooth" });
+              this.succes = false;
             }, 2000);
+
+            console.log(res);
           } else {
             this.erreur = true;
+            setTimeout(() => {
+              this.$router.push({
+                path: "/contact",
+              });
+            }, 1000);
           }
         });
     },
