@@ -1,5 +1,5 @@
 <template>
-  <section class="hero is-fullheight">
+  <section class="hero">
     <div class="mon-cv">
       <div class="left-part mt-5">
         <div class="me">

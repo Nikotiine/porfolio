@@ -145,7 +145,7 @@ export default {
       notValidEmail: false,
       validEmail: false,
       succesMessage: "Votre message a été correctement envoyé",
-      errorMessage: "Un probleme est survenu , merci de re-essayer",
+      errorMessage: "Un probleme est survenu , merci de re",
     };
   },
   methods: {

@@ -1,6 +1,6 @@
 <template>
   <div class="chart">
-    <canvas id="myChart" width="480" height="420"></canvas>
+    <canvas id="myChart"></canvas>
   </div>
 </template>
 
@@ -116,5 +116,11 @@ canvas {
   .chart {
     max-width: 320px;
   }
+}
+.chart {
+  height: 40vh;
+  width: 40vw;
+  position: relative;
+  margin: auto;
 }
 </style>

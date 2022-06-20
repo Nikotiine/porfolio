@@ -128,7 +128,7 @@ export default {
 
 <style lang="scss" scoped>
 .accueil-body {
-  min-height: 150vh;
+  // min-height: 150vh;
   display: grid;
   justify-items: center;
   //grid-template-columns: 1fr;
