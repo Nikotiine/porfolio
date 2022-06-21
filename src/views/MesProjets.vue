@@ -41,7 +41,7 @@ export default {
       projets: [
         {
           id: 0,
-          name: "Referenciel grimpe",
+          name: "Carnet de croix",
           typeDeProjet: "Side-project",
           lienGit: "https://github.com/Nikotiine/referencielGrimpe",
           lienWeb:
@@ -49,7 +49,7 @@ export default {
           src: require("@/assets/img/logo_grimpe.png"),
           techno: "VueJs + Bulma + NodeJs(express)",
           sujet:
-            "Application destinée aux grimpeurs afin de réferencer les differents sites d'escalade et les voies existantes , possiblité de creer un carnet de croix",
+            "Application destinée aux grimpeurs afin de réferencer les differents sites d'escalade et les voies existantes , possiblité de creer un carnet de croix.",
         },
         {
           id: 1,
@@ -60,7 +60,7 @@ export default {
           src: require("@/assets/img/logo_genesis.png"),
           techno: "VueJs + Bulma + NodeJs(express)",
           sujet:
-            "Site vitrine pour des formations en Meta-Homeopathie , et interface Admin + users pour le refill des produits ",
+            "Site vitrine pour des formations en Meta-Homeopathie , et interface Admin + users pour le refill des produits.",
         },
         {
           id: 2,
@@ -71,17 +71,17 @@ export default {
           src: require("@/assets/img/logo_node.png"),
           techno: "NodeJs + Express + Sequelize + Mariadb",
           sujet:
-            "Packtage pre-compilé pour faire un backend nodeJs avec mariaDb | autre ddb sql configurable ",
+            "Packtage pre-compilé pour faire un backend nodeJs avec mariaDb | autre ddb sql configurable.",
         },
         {
           id: 3,
           name: "Portfolio",
           typeDeProjet: "Projet concret",
           lienGit: "https://github.com/Nikotiine/porfolio",
-          lienWeb: "www.googfdsfle.com",
+          lienWeb: "https://nicolas-godin.fr/",
           src: require("@/assets/img/logo_vue.png"),
           techno: "VueJs + bulma + chartjs",
-          sujet: "Le code source de ce site  ",
+          sujet: "Le code source de ce site.",
         },
         {
           id: 4,
@@ -93,7 +93,7 @@ export default {
           src: require("@/assets/img/logo_node.png"),
           techno: "NodeJs + express() + nodemailer",
           sujet:
-            "Mini backend pour site web statique : permet l'envoie de mail pour un fommulaire de contact",
+            "Mini backend pour site web statique : permet l'envoie de mail pour un fommulaire de contact.",
         },
       ],
     };

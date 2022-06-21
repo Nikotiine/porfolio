@@ -1,16 +1,16 @@
 <template>
-  <section class="hero is-fullheight bg-accueil" id="home">
+  <section class="hero bg-accueil" id="home">
     <div class="accueil-body">
       <div class="accueil">
         <h1 class="title mt-6 has-font-ubuntu">Nicolas Godin</h1>
         <h2 class="subtitle">Developpeur Full-stack</h2>
       </div>
-      <div :class="{ onload: isMounted, accueil: !isMounted }">
+      <div :class="{ onload: isMounted, accueil: !isMounted }" class="mt-6">
         <about-me />
       </div>
       <div
         :class="{ showFromRight: showMyKnowledge, accueil: !showMyKnowledge }"
-        class="mt-6"
+        class="mt-2"
       >
         <MyKnowledge />
       </div>
@@ -19,31 +19,39 @@
           showFromLeft: showTraningCourse,
           accueil: !showTraningCourse,
         }"
+        class="mt-2"
       >
         <training-course />
       </div>
 
-      <div id="cv" :class="{ 'my-cv': showMyCv, accueil: !showMyCv }">
+      <div
+        id="cv"
+        :class="{ 'my-cv': showMyCv, accueil: !showMyCv }"
+        class="mt-2"
+      >
         <article class="message is-info">
           <div class="message-header">
-            <p>Mon cv</p>
+            <p>Mon CV</p>
           </div>
           <div class="message-body">
             <MonCV />
           </div>
         </article>
       </div>
-      <div :class="{ 'my-projects': showMyProjects, accueil: !showMyProjects }">
+      <div
+        :class="{ 'my-projects': showMyProjects, accueil: !showMyProjects }"
+        class="mt-2"
+      >
         <article class="message is-info">
           <div class="message-header">
-            <p>Mes projets</p>
+            <p>Mes Projets</p>
           </div>
           <div class="message-body">
             <MesProjets />
           </div>
         </article>
       </div>
-      <div class="contact" id="contact-form">
+      <div class="contact mt-3" id="contact-form">
         <article class="message is-info">
           <div class="message-header">
             <p>Me contacter</p>
@@ -131,7 +139,7 @@ export default {
   // min-height: 150vh;
   display: grid;
   justify-items: center;
-  //grid-template-columns: 1fr;
+  gap: 1rem;
   grid-template-rows: 0.2fr 0.4fr 0.3fr 0.3fr 1fr 0.5fr 0.5fr;
   grid-template-areas:
     "titre "
@@ -213,6 +221,7 @@ export default {
   grid-area: card5;
   width: 95%;
   transition: opacity ease-in-out 2s;
+  margin: 0.5rem;
 }
 @media screen and (max-width: 480px) {
   .accueil-body {

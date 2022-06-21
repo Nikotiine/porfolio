@@ -13,7 +13,7 @@
           </figure>
 
           <p class="subtitle is-6 mt-3">
-            <a href=" htps://www.linkedin.com/in/nikolasgodin"
+            <a href="https://www.linkedin.com/in/nikolasgodin/"
               >Profil Linkedin</a
             >
           </p>

@@ -16,8 +16,8 @@
     </p>
     <h3>Envoie du formulaire de contact :</h3>
     <p>
-      Seul votre mail est conserve dans la boite de reception de
-      contact@nicolasgodin.fr afin de pouvoir vous repondre <br />
+      Seul votre mail est conservé dans la boite de réception de
+      contact@nicolasgodin.fr afin de pouvoir vous répondre <br />
       Vous pouvez exercer votre droit d’accès et de rectification aux
       informations vous concernant en écrivant à : contact@nicolasgodin.fr
     </p>

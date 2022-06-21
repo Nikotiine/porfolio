@@ -44,6 +44,7 @@ export default {
           ],
         },
         options: {
+          responsive: true,
           maintainAspectRatio: false,
           categoryPercentage: 1,
           barPercentage: 0.6,
@@ -58,7 +59,7 @@ export default {
               position: "bottom",
             },
           },
-          responsive: true,
+
           lineTension: 1,
           scales: {
             x: {
@@ -107,11 +108,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-canvas {
-  // max-width: 600px;
-  margin: 0 auto;
-  //width: auto;
-}
 @media screen and (max-width: 600px) {
   .chart {
     max-width: 320px;
