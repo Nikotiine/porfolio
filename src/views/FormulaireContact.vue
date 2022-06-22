@@ -1,6 +1,6 @@
 <template>
   <section>
-    <form action="POST" id="form">
+    <form id="form">
       <div class="box">
         <div class="field">
           <label class="label">Votre Nom</label>
@@ -151,14 +151,19 @@ export default {
     };
   },
   methods: {
-    runCaptcha() {
+    runCaptcha(e) {
+      e.preventDefault();
+      const self = this;
+
       /* eslint-disable */
-      grecaptcha.ready(function () {
+      grecaptcha.ready(() => {
         grecaptcha
-          .execute(this.captchaKey, { action: "submit" })
+          .execute(self.captchaKey, {
+            action: "validate_captcha",
+          })
           .then(function (token) {
             const captcha = token;
-            this.send(captcha);
+            self.send(captcha);
           });
       });
     },
