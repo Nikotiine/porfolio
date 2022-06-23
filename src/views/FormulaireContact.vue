@@ -137,7 +137,7 @@ export default {
     return {
       lastName: null,
       message: "",
-      firstName: null,
+      firstName: process.env.captchaToken,
       email: null,
       cgu: false,
       captchaKey: "6LcTQI4gAAAAAK-pOUH1f-gqPubfPz3FUf_MzNTJ",
