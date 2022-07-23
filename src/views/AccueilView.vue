@@ -35,6 +35,12 @@
           </div>
           <div class="message-body">
             <MonCV />
+            <a
+              target="_blank"
+              href="../cvnicolasg.pdf"
+              class="button is-rounded is-primary"
+              ><strong>Telecharger mon CV</strong></a
+            >
           </div>
         </article>
       </div>

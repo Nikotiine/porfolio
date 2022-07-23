@@ -29,8 +29,9 @@
         <a href="https://graaly.com/" target="_blank">Graaly</a>. <br />
         <br />
         Grâce à ma formation actuelle je découvre le langage Java et la
-        programation Orientée Objet. Dans peu de temps j'apprendrais PHP (sous
-        Symfony) et le développement en couches. <br />
+        programation Orientée Objet.Les notions du développement en couches sous
+        java font deja parti de mes acquis , d 'ici peu de temps php et son
+        framework synphony feront parti de mes connaissance. <br />
         <br />
         Vous trouverez sur ce site une partie des projets que j'ai réalisé, et
         évidemment la possiblité de me contacter. <br />

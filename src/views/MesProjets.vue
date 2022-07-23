@@ -95,6 +95,17 @@ export default {
           sujet:
             "Mini backend pour site web statique : permet l'envoie de mail pour un fommulaire de contact.",
         },
+        {
+          id: 5,
+          name: "Projet ENI-Enchere",
+          typeDeProjet: "Projet de groupe",
+          lienGit: "https://github.com/Nikotiine/ENI_Encheres",
+          lienWeb: "https://github.com/Nikotiine/ENI_Encheres",
+          src: require("@/assets/img/logoenienchere.png"),
+          techno: "JAVAEE 9, TOMCAT9 et JSTL",
+          sujet:
+            "Projet de groupe sur une webapp d'encheres , faite en J2E , nous somme 3 etudiants à develloper l'application .",
+        },
       ],
     };
   },
