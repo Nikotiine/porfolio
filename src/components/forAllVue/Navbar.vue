@@ -23,22 +23,22 @@
       <div class="navbar-start">
         <router-link
           to="/"
-          class="navbar-item"
+          class="navbar-item hover-black"
           @click="scrollInHome() + openCloseNavbar()"
           >Nicolas Godin</router-link
         >
 
         <router-link
           to="/mon-cv"
-          class="navbar-item"
+          class="navbar-item hover-black"
           @click="openCloseNavbar() + scrollInCV()"
-          >mon CV</router-link
+          >Mon CV</router-link
         >
 
         <div class="navbar-item has-dropdown is-hoverable">
           <router-link
             to="/mes-projets"
-            class="navbar-link"
+            class="navbar-link hover-black"
             @click="openCloseNavbar() + scrollInProject()"
             >Mes projets</router-link
           >
@@ -115,16 +115,22 @@ export default {
 
 <style lang="scss" scoped>
 a.navbar-item:hover {
-  color: #000;
+  color: transparent;
 }
 .navbar-link:hover {
-  color: #000;
+  color: transparent;
 }
 a.nvabar-item:visited {
   color: white;
 }
+a.nvabar-item:focus {
+  background-color: white;
+}
 
 .navbar-link:not(.is-arrowless)::after {
   border-color: white;
+}
+.hover-black:hover {
+  color: black !important;
 }
 </style>

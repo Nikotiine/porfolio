@@ -21,12 +21,12 @@
           </div>
         </div>
         <footer class="card-footer">
-          <a :href="projet.lienGit" target="_blank" class="card-footer-item"
-            >Voir sur GitHub</a
-          >
-          <a :href="projet.lienWeb" target="_blank" class="card-footer-item"
-            >Visiter le site</a
-          >
+          <a :href="projet.lienGit" target="_blank" class="card-footer-item">{{
+            projet.item1
+          }}</a>
+          <a :href="projet.lienWeb" target="_blank" class="card-footer-item">{{
+            projet.item2
+          }}</a>
         </footer>
       </div>
     </div>
@@ -43,6 +43,8 @@ export default {
           id: 0,
           name: "Carnet de croix",
           typeDeProjet: "Side-project",
+          item1: "Repo Front-end",
+          item2: "Repo Back-end ",
           lienGit: "https://github.com/Nikotiine/referencielGrimpe",
           lienWeb:
             "https://github.com/Nikotiine/referencielGrimpe/blob/main/README.md",
@@ -55,8 +57,10 @@ export default {
           id: 1,
           name: "Site Web Meta-homeopathie",
           typeDeProjet: "Projet concret",
+          item1: "Repo Front-end",
+          item2: "Lien Site-Web (beta) ",
           lienGit: "https://github.com/Nikotiine/genesisv2",
-          lienWeb: "https://github.com/Nikotiine/backend-meta",
+          lienWeb: "https://genesis.nicolas-godin.fr/",
           src: require("@/assets/img/logo_genesis.png"),
           techno: "VueJs + Bulma + NodeJs(express)",
           sujet:
@@ -66,6 +70,8 @@ export default {
           id: 2,
           name: "BackEnd type Cli",
           typeDeProjet: "Side-project",
+          item1: "Repo Github",
+          item2: "Repo Github",
           lienGit: "https://github.com/Nikotiine/backendnodeJs",
           lienWeb: "https://github.com/Nikotiine/backendnodeJs",
           src: require("@/assets/img/logo_node.png"),
@@ -77,6 +83,8 @@ export default {
           id: 3,
           name: "Portfolio",
           typeDeProjet: "Projet concret",
+          item1: "Repo Front-end",
+          item2: "Site Web ",
           lienGit: "https://github.com/Nikotiine/porfolio",
           lienWeb: "https://nicolas-godin.fr/",
           src: require("@/assets/img/logo_vue.png"),
@@ -87,24 +95,55 @@ export default {
           id: 4,
           name: "NodeJs mini-backend",
           typeDeProjet: "Projet concret",
+          item1: "Repo Github",
+          item2: "Repo Github",
           lienGit: "https://github.com/Nikotiine/forContactFrom",
           lienWeb:
             "https://github.com/Nikotiine/forContactFrom/blob/main/readme.md",
           src: require("@/assets/img/logo_node.png"),
           techno: "NodeJs + express() + nodemailer",
           sujet:
-            "Mini backend pour site web statique : permet l'envoie de mail pour un fommulaire de contact.",
+            "Mini backend pour site web statique : permet l'envoie de mail pour un fommulaire de contact." +
+            "Utilise Google Re-captcha pour la validation",
         },
         {
           id: 5,
           name: "Projet ENI-Enchere",
           typeDeProjet: "Projet de groupe",
+          item1: "Repo Github",
+          item2: "Repo Github",
           lienGit: "https://github.com/Nikotiine/ENI_Encheres",
           lienWeb: "https://github.com/Nikotiine/ENI_Encheres",
           src: require("@/assets/img/logoenienchere.png"),
           techno: "JAVAEE 9, TOMCAT9 et JSTL",
           sujet:
             "Projet de groupe sur une webapp d'encheres , faite en J2E , nous somme 3 etudiants à develloper l'application .",
+        },
+        {
+          id: 6,
+          name: "Carnet de croix V-Angular",
+          typeDeProjet: "Side-project",
+          item1: "Repo Front-end",
+          item2: "Repo Back-end ",
+          lienGit: "https://github.com/Nikotiine/grimpAngular",
+          lienWeb: "https://github.com/Nikotiine/ApiGrimpeJava",
+          src: require("@/assets/img/logo_grimpe.png"),
+          techno: "Angular 14 et JAVA EE 9 (sans framework)",
+          sujet:
+            "Version de 'Carnet de Croix' en Angular pour le Front et Java EE pour le Back-end",
+        },
+        {
+          id: 7,
+          name: "Carnet de montagne",
+          typeDeProjet: "Side-project",
+          item1: "Repo Github",
+          item2: "Repo Github",
+          lienGit: "https://github.com/Nikotiine/Carnet_de_montagne",
+          lienWeb: "https://github.com/Nikotiine/Carnet_de_montagne",
+          src: require("@/assets/img/logo_php.png"),
+          techno: "Php 8.1 + Symfony 5.4.2",
+          sujet:
+            "Premier projet en Php sous Symfony / Application carnet de note pour sortie montagne ",
         },
       ],
     };
