@@ -9,7 +9,7 @@
         <div class="contact mt-4">
           <h3 class="title is-5">Info Contact</h3>
           <figure class="image is-32x32">
-            <img src="@/assets/img/logo_link.png" />
+            <img src="@/assets/img/logo_link.png" alt="logo linkedin" />
           </figure>
 
           <p class="subtitle is-6 mt-3">

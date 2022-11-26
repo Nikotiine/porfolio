@@ -23,16 +23,21 @@
           >ENI</a
         >.<br />
         <br />
-
+        Je suis maintenant à la recherche d'une place en alternance afin de
+        poursuivre mon parcours avec L'ENI et obtenir un diplôme de développeur
+        d'application (bac +4) <br />
+        <br />
         J'ai principalement travaillé avec VueJs et Nodejs sur des projets
         personnels et lors de mon stage chez
-        <a href="https://graaly.com/" target="_blank">Graaly</a>. <br />
+        <a href="https://graaly.com/" target="_blank">Graaly</a>.
         <br />
-        Grâce à ma formation actuelle je découvre le langage Java et la
-        programation Orientée Objet. Les notions de développement en couches en
-        Java ou PHP font deja parti de mes acquis. Le framework Symfony est
-        egalement présent à mon repertoire de connaissance. <br />
-        <br />
+        Actuellement je travaille avec le framework Symfony(5) et PHP 7.4 durant
+        mon stage chez
+        <a href="https://quantior.com/fr/" target="_blank">Quantior Group</a>
+        Au cours de ma formation actuelle j'ai pu monter en compétences en Java
+        et PHP. J'ai aussi appris le respect des conventions et l'utilisation de
+        pattern de développement <br /><br />
+
         Vous trouverez sur ce site une partie des projets que j'ai réalisé, et
         évidemment la possiblité de me contacter. <br />
         Que vous soyez

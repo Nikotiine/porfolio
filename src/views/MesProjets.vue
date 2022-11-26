@@ -68,16 +68,16 @@ export default {
         },
         {
           id: 2,
-          name: "BackEnd type Cli",
-          typeDeProjet: "Side-project",
+          name: "Projet ENI-sortir",
+          typeDeProjet: "Projet de groupe",
           item1: "Repo Github",
           item2: "Repo Github",
-          lienGit: "https://github.com/Nikotiine/backendnodeJs",
-          lienWeb: "https://github.com/Nikotiine/backendnodeJs",
-          src: require("@/assets/img/logo_node.png"),
-          techno: "NodeJs + Express + Sequelize + Mariadb",
+          lienGit: "https://github.com/Nikotiine/EniSortir",
+          lienWeb: "https://github.com/Nikotiine/EniSortir",
+          src: require("@/assets/img/Eni_sortir.png"),
+          techno: "Php 8.1 + Symfony 5.4.2 , Mysql /ChartUx / leaflet",
           sujet:
-            "Packtage pre-compilé pour faire un backend nodeJs avec mariaDb | autre ddb sql configurable.",
+            "Projet de groupe sur le theme OVS , realiser a 4 etudiants de l'ENI",
         },
         {
           id: 3,
@@ -93,21 +93,6 @@ export default {
         },
         {
           id: 4,
-          name: "NodeJs mini-backend",
-          typeDeProjet: "Projet concret",
-          item1: "Repo Github",
-          item2: "Repo Github",
-          lienGit: "https://github.com/Nikotiine/forContactFrom",
-          lienWeb:
-            "https://github.com/Nikotiine/forContactFrom/blob/main/readme.md",
-          src: require("@/assets/img/logo_node.png"),
-          techno: "NodeJs + express() + nodemailer",
-          sujet:
-            "Mini backend pour site web statique : permet l'envoie de mail pour un fommulaire de contact." +
-            "Utilise Google Re-captcha pour la validation",
-        },
-        {
-          id: 5,
           name: "Projet ENI-Enchere",
           typeDeProjet: "Projet de groupe",
           item1: "Repo Github",
@@ -120,7 +105,7 @@ export default {
             "Projet de groupe sur une webapp d'encheres , faite en J2E , nous somme 3 etudiants à develloper l'application .",
         },
         {
-          id: 6,
+          id: 5,
           name: "Carnet de croix V-Angular",
           typeDeProjet: "Side-project",
           item1: "Repo Front-end",

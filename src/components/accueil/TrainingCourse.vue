@@ -15,8 +15,10 @@
         <a href="https://graaly.com/" target="_blank">Graaly</a> <br />
         Mai 2022 - Decembre 2022 |
         <a href="https://www.eni-ecole.fr/" target="_blank">ENI</a> DWM <br />
-        <strong>17 Octobre 2022 au 9 Decembre 2022</strong> | Stage en entrepise
-        à trouver
+        17 Octobre 2022 au 9 Decembre 2022 | Stage en entreprise chez
+        <a href="https://quantior.com/fr/" target="_blank">Quantior Group</a
+        ><br />
+        <strong>A partir de Decembre</strong> | Recherche d'alternance / emploi
       </p>
     </div>
   </article>

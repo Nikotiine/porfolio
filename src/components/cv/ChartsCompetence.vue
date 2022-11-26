@@ -19,16 +19,19 @@ export default {
             "CSS",
             "JavaScript",
             "VueJs",
+            "Angular",
             "Quasar",
             "Git",
             "Bulma",
             "NodeJs",
             "SQL",
             "Java",
+            "PHP",
+            "Symfony",
           ],
           datasets: [
             {
-              data: [50, 50, 65, 65, 40, 75, 60, 60, 50, 20],
+              data: [70, 60, 70, 65, 50, 40, 75, 80, 70, 70, 40, 60, 70],
               backgroundColor: [
                 " rgb(230 76 34 / 80%)",
                 "rgb(33 100 241 / 80%)",
@@ -39,6 +42,10 @@ export default {
                 "rgb(1 209 178 / 80%)",
                 "rgb(2 121 214 / 80%)",
                 "rgb(235 100 103 / 80%)",
+                " rgb(230 76 34 / 80%)",
+                "rgb(64 185 132 / 80%)",
+                "rgb(110 65 205 / 80%)",
+                "rgb(33 100 241 / 80%)",
               ],
             },
           ],
@@ -114,7 +121,7 @@ export default {
   }
 }
 .chart {
-  height: 40vh;
+  height: 45vh;
   width: 40vw;
   position: relative;
   margin: auto;

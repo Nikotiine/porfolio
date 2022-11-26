@@ -1,5 +1,12 @@
 <template>
   <div class="experience-pro">
+    <h2 class="title is-5">
+      Octobre - Decembre 2022 | Stage développeur web | Quantior
+    </h2>
+    <p class="subtitle is-6">
+      Développement d'une solution d'entreprise (ERP). Technos utlisées :
+      Symfony / PHP / Bootstrap / Git / Docker
+    </p>
     <h2 class="title is-5">Janvier 2022 | Stage développeur web | Graaly</h2>
     <p class="subtitle is-6">
       Développement d'une applicaton mobile de créaton de quizz. Technos
