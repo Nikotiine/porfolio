@@ -3,12 +3,20 @@
     <table class="table">
       <tbody>
         <tr>
+          <td class="pr-5">2022 / 2023</td>
+          <td>
+            <strong>Alternace CDA ENI</strong><br />
+            Formation concepteur / developpeur d'application (rncp 6)
+          </td>
+        </tr>
+        <tr>
           <td class="pr-5">2022</td>
           <td>
             <strong>Formation DWM ENI</strong><br />
             Formation dev web et web mobile (rncp 5)
           </td>
         </tr>
+
         <tr>
           <td class="pr-5">2021-2022</td>
           <td>

@@ -64,4 +64,11 @@ export default {
   justify-content: space-between;
   align-items: stretch;
 }
+
+figure {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5rem;
+}
 </style>

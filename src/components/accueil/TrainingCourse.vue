@@ -18,7 +18,8 @@
         17 Octobre 2022 au 9 Decembre 2022 | Stage en entreprise chez
         <a href="https://quantior.com/fr/" target="_blank">Quantior Group</a
         ><br />
-        <strong>A partir de Decembre</strong> | Recherche d'alternance / emploi
+        <strong>Depuis Decembre</strong> | En alternance avec
+        <a href="https://quantior.com/fr/" target="_blank">Quantior Group</a>
       </p>
     </div>
   </article>
